@@ -54,7 +54,6 @@ Our solution includes in-depth analysis and visualization of fashion trends, dyn
 
 
 
-
 <H3>Text to Image Generation</H3>
 
 
@@ -64,13 +63,19 @@ Our solution includes in-depth analysis and visualization of fashion trends, dyn
 
 
 
-
-
 <h3> 3D Visualization</h3>
 
 
 
 ![Screenshot (67)](https://github.com/user-attachments/assets/a58dbaf7-ce81-4d9c-986d-64a341505755)
+
+
+<h2>ChatBot</h2>
+
+
+
+![WhatsApp Image 2024-07-12 at 16 52 14_8accd4f5](https://github.com/user-attachments/assets/0abbfb56-11b7-49a2-8db5-de880f064e78)
+
 
 
 
