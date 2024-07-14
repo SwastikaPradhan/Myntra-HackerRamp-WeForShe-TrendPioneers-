@@ -31,13 +31,40 @@ Our solution includes in-depth analysis and visualization of fashion trends, dyn
 <li>Uses AI to transform descriptions into visual designs for customization.</li>
     
 <h2>3D Model Customization</h2>
+
 <li>Allows users to interact with 3D models of dresses.</li>
 <li>Enables changing the color of dresses and adding custom logos, providing a realistic preview of custom designs.</li>
 
 <h1>ScreenShots</h1>
 
 <h3>Website</h3>
-![Screenshot_14-7-2024_23513_trend-pioneers-solutions netlify app](https://github.com/user-attachments/assets/7ce7d955-948f-4236-acac-10eb6458c4f5)
+
+
+
+![website png](https://github.com/user-attachments/assets/d33c78bc-1c45-4e91-bbd3-222a696f4c85)
+
+
+
+<h3>Data Visualization</h3>
+
+
+
+
+
+
+
+
+<H3>Text to Image Generation</H3>
+
+
+
+
+
+
+
+
+
+<h3> 3D Visualization</h3>
 
 
 
