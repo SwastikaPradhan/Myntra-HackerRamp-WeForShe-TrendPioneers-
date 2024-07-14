@@ -37,7 +37,30 @@ Valtio
 - Responsive 3D Application: Ensure the application is responsive, delivering a seamless experience across various devices.
 
 - Framer Motion Animation: Implement framer motion animations for smooth transitions between different 3D models.
-
   
+
+
+<h1>Demo of the website</h1>
+
+<h2>Home Page</h2>
+
+![Screenshot (67)](https://github.com/user-attachments/assets/64d3d49e-e714-4e45-a7ab-37ae160898a3)
+
+<H2> Change Color</H2>
+
+![Screenshot (70)](https://github.com/user-attachments/assets/80bfdc64-d614-419f-a366-0d933a42b224)
+
+
+
+<H2>Select File of a Logo</H2>
+
+![Screenshot (71)](https://github.com/user-attachments/assets/1f82af94-8540-473a-8137-70ceccc9a4cb)
+
+
+<H2>Logo Design</H2>
+
+![Screenshot (72)](https://github.com/user-attachments/assets/f8a726d5-4de6-48f9-a824-0e94018ff235)
+
+
 
 
