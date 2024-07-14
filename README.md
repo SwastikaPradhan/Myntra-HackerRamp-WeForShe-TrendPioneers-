@@ -49,6 +49,7 @@ Our solution includes in-depth analysis and visualization of fashion trends, dyn
 
 
 
+![347715826-a83a6aa9-14da-4303-9ec6-83ea7ff1ef98](https://github.com/user-attachments/assets/9fb209b6-0701-48a3-8c1c-fda6f7edbf36)
 
 
 
@@ -58,6 +59,7 @@ Our solution includes in-depth analysis and visualization of fashion trends, dyn
 
 
 
+![textimage](https://github.com/user-attachments/assets/49f403be-768e-48fe-994c-f2cdb3d992b8)
 
 
 
@@ -67,6 +69,8 @@ Our solution includes in-depth analysis and visualization of fashion trends, dyn
 <h3> 3D Visualization</h3>
 
 
+
+![Screenshot (67)](https://github.com/user-attachments/assets/a58dbaf7-ce81-4d9c-986d-64a341505755)
 
 
 
