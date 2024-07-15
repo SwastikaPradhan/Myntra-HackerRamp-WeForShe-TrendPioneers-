@@ -9,7 +9,7 @@ This project is an chatbot application that uses a text command or voice command
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Model Information](#model-information)
+- [Field/Concept Information](#field-information)
 - [Contribution](#contribute)
 
 ## Features
