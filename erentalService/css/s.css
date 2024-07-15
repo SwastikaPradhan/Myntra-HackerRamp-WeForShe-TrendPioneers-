@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(247, 209, 238);
+}
+.form{
+    background-color: rgb(231, 233, 234);
+    margin-left: 25rem;
+    margin-top: 3rem;
+    width: 50%;
+    border-radius: 5%;
+    height: 50rem;
+}
+.form h3{
+    text-align: center;
+}
+.form .form-section{
+    padding: 2rem;
+}
+.form .form-section input[type = "text"]{
+    width: 100%;
+    height: 2rem;
+    border: none;
+}
+.form .form-section button[type="submit"]{
+    text-align: center;
+    margin-left: 17rem;
+    padding: 0.8rem;
+    width: 8rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    background-color: rgb(62, 64, 64);
+    color: white;
+    font-size: 1rem;
+}
+.form .form-section .signature{
+    border: 1px solid black;
+    margin-bottom: 0.5rem;
+    width: 25rem;
+}
+.form .form-section button[type="button"]{
+    width: 8rem;
+    height: 1.5rem;
+}
