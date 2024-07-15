@@ -71,10 +71,25 @@ Our solution includes in-depth analysis and visualization of fashion trends, dyn
 
 
 <h2>ChatBot</h2>
+<li>It will take us to different part of pages.</li>
+<li>There is a feature for verbal command.</li>
+<li>It can also compare between various products.</li>
+![image](https://github.com/user-attachments/assets/dffc578e-75dd-4dcc-a64f-961ec64bc5f7)
 
 
+<h3>E-Rental Service</h3>
+<li>Allow users to rent their products on myntra.</li>
+<li>This will lead to sustainable shopping.</li>
+<li>It will also help people to do business alongside and earn some money from their rental products.</li>
 
-![WhatsApp Image 2024-07-12 at 16 52 14_8accd4f5](https://github.com/user-attachments/assets/0abbfb56-11b7-49a2-8db5-de880f064e78)
+<h5>Company's benefit:</h5>
+<li>this practice will engage more users.</li>
+<li>The comapny will also be able to verify the product.</li>
+<li>If any issue in products exist them since company will have the contract sign so it can solve this problem in thier own way.</li>
+
+![image](https://github.com/user-attachments/assets/e29eb0eb-93cf-4673-a8ff-a2200bbfe9f5)
+![image](https://github.com/user-attachments/assets/6d186f0a-117a-43e4-81f0-07d6fd1cd721)
+
 
 
 
