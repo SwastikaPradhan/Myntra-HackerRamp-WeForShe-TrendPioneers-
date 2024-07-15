@@ -1,0 +1,127 @@
+{
+    "intents": [
+      {
+        "tag": "men_section",
+        "patterns": [
+          "go to men's section",
+          "men's section",
+          "show me men's clothes",
+          "men's clothes"
+        ],
+        "responses": [
+          "Navigating to the men's section..."
+        ]
+      },
+      {
+        "tag": "women_section",
+        "patterns": [
+          "go to women's section",
+          "women's section",
+          "show me women's clothes",
+          "women's clothes"
+        ],
+        "responses": [
+          "Navigating to the women's section..."
+        ]
+      },
+      {
+        "tag": "footwear_section",
+        "patterns": [
+          "go to footwear section",
+          "footwear section",
+          "show me footwear",
+          "footwear"
+        ],
+        "responses": [
+          "Navigating to the footwear section..."
+        ]
+      },
+      {
+        "tag": "kids_section",
+        "patterns": [
+          "go to kids section",
+          "kids section",
+          "show me kids clothes",
+          "kids clothes"
+        ],
+        "responses": [
+          "Navigating to the kids section..."
+        ]
+      },
+      {
+        "tag": "compare_products",
+        "patterns": [
+          "compare product A and product B",
+          "which is better, product A or product B",
+          "product A vs product B",
+          "compare A and B"
+        ],
+        "responses": [
+          "Comparing products..."
+        ]
+      },
+      {
+        "tag": "top_products",
+        "patterns": [
+          "show me top products of brand X",
+          "top products of brand X",
+          "best products of brand X",
+          "top 3 products of brand X"
+        ],
+        "responses": [
+          "Fetching top products for brand X..."
+        ]
+      },
+      {
+        "tag": "support_details",
+        "patterns": [
+          "I have a problem",
+          "application issue",
+          "app is not working",
+          "contact support"
+        ],
+        "responses": [
+          "Please contact our support team at support@myntra.com for assistance."
+        ]
+      },
+      {
+        "tag": "greetings",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "Hello",
+          "Good Day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, how can I help you?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "See you later",
+          "Goodbye"
+        ],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank You"
+        ],
+        "responses": [
+          "Happy to help!",
+          "Any time!"
+        ]
+      }
+    ]
+  }
+  
