@@ -35,18 +35,18 @@
         <br>
         <h3>E-RENTAL FORM</h3>
         <div class="form-section">
-            <form id="rentalForm">
+            <form id="rentalForm" onsubmit="return validateForm(event)">
                 <div class="name">
                     <p>Enter Your Name</p>
-                    <input type="text" placeholder="Enter your name" id="name" class="name">
+                    <input type="text" placeholder="Enter your name" id="name" class="name" required>
                 </div>
                 <div class="phone">
                     <p>Enter Your Contact Number</p>
-                    <input type="text" placeholder="Enter your contact number" id="contact" class="contact">
+                    <input type="text" placeholder="Enter your contact number" id="contact" class="contact" required>
                 </div>
                 <div class="email">
                     <p>Enter Your Mail Id</p>
-                    <input type="text" placeholder="Enter Your Mail Id" id="email">
+                    <input type="text" placeholder="Enter Your Mail Id" id="email" required>
                 </div>
                 <div class="signcontract">
                     <p>Sign Contract:</p>
@@ -59,7 +59,8 @@
                     <p>Upload Image:</p>
                     <input type="file" id="imageUpload" accept="image/*">
                 </div>
-                <button type="submit" onclick="submitData()">Submit</button>
+                <button type="submit">Submit</button>
+                <p id="signatureError" style="color: red; display: none;">Signature is required.</p>
             </form>
         </div>
     </div>
