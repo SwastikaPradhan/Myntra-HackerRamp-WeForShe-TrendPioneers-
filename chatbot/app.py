@@ -18,7 +18,6 @@ class ChatApp:
         self.intents = intents
         self.products = products
         self._setup_main_window()
-        self._display_welcome_message()
 
     def run(self):
         self.window.mainloop()
@@ -66,21 +65,6 @@ class ChatApp:
                               command=self._on_speak_pressed)
         speak_button.place(relx=0.80, rely=0.008, relheight=0.06, relwidth=0.19)
 
-    def _display_welcome_message(self):
-        welcome_message = (
-            "Hello! Welcome to the E-Rental Service chatbot.\n"
-            "Here are some tips to get you started:\n"
-            "- You can type or speak your queries in the input box below.\n"
-            "- To explore our men's section, type 'men'.\n"
-            "- For the women's section, type 'women'.\n"
-            "- To know more about our e-rental services, type 'e-rental'.\n"
-            "Feel free to ask me any questions about our services!"
-        )
-        self.text_widget.configure(state=NORMAL)
-        self.text_widget.insert(END, f"{bot_name}: {welcome_message}\n\n")
-        self.text_widget.configure(state=DISABLED)
-        self.text_widget.see(END)
-
     def _on_enter_pressed(self, event):
         msg = self.msg_entry.get()
         self._insert_message(msg, "You")
@@ -123,9 +107,9 @@ class ChatApp:
             self._insert_message("Could not request results; check your network connection.", "System")
 
 def main():
-    intents_file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/intents.json'
-    model_file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/data.pth'
-    products_file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/products.csv'
+    intents_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/intents.json'
+    model_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/data.pth'
+    products_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/products.csv'
 
     intents = load_data(intents_file_path)
     model, all_words, tags = load_model(model_file_path)
