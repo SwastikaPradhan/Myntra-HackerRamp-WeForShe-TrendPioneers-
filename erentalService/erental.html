@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Rental Service</title>
+    <link rel="stylesheet" href="css/s.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-in">
+        <a href="index.html"><img src="./img/myntra.jpeg" alt ="myntra logo" class="logo"/></a>
+        <div class="navbar-item">
+            <a href="https://www.myntra.com/shop/men">MEN</a>
+            <a href="https://www.myntra.com/shop/women">WOMEN</a>
+            <a href="https://www.myntra.com/shop/kids">KIDS</a>
+            <a href="https://www.myntra.com/shop/home-living">HOME & LIVING</a>
+            <a href="https://www.myntra.com/personal-care">BEAUTY</a>
+            <a href="https://www.myntra.com/studio/home">STUDIO</a>
+            <a href="erental.html">E-RENTAL</a>
+        </div>
+        <div class="search-bar">
+            <div class="search-icon"><img src="img/search.jpeg"></div>
+            <div class="searchbox"><input type="text" class="inputsearch" placeholder="  Seach for products,brands and more"></div>
+        </div>
+        <div class="icons">
+            <img src="img/profile.jpeg">
+            <img src="img/wishlist.jpg">
+            <img src="img/bag.jpeg">
+        </div>
+        </div>
+    </div>
+    <div class="form">
+        <br>
+        <h3>E-RENTAL FORM</h3>
+        <div class="form-section">
+            <form id="rentalForm" onsubmit="return validateForm(event)">
+                <div class="name">
+                    <p>Enter Your Name</p>
+                    <input type="text" placeholder="Enter your name" id="name" class="name" required>
+                </div>
+                <div class="phone">
+                    <p>Enter Your Contact Number</p>
+                    <input type="text" placeholder="Enter your contact number" id="contact" class="contact" required>
+                </div>
+                <div class="email">
+                    <p>Enter Your Mail Id</p>
+                    <input type="text" placeholder="Enter Your Mail Id" id="email" required>
+                </div>
+                <div class="signcontract">
+                    <p>Sign Contract:</p>
+                    <div class="signature">
+                        <canvas id="signatureCanvas" width="400" height="200"></canvas>
+                    </div>
+                    <button type="button" onclick="clearSignature()" class="signature">Clear Signature</button>
+                </div>
+                <div class="upload-image">
+                    <p>Upload Image:</p>
+                    <input type="file" id="imageUpload" accept="image/*" required>
+                </div>
+                <button type="submit">Submit</button>
+                <p id="signatureError" style="color: red; display: none;">Signature is required.</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/erental.js"></script>
+</body>
+</html>

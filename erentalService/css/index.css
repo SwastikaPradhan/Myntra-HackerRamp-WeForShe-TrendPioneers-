@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+}
+.navbar{
+    background-color: white;
+    width: 100%;
+    height: 4.5rem;
+    box-shadow: 0 4px 8px rgba(158, 158, 158, 0.2);
+
+}
+.navbar .logo{
+    height: 2.3rem;
+    width: 4rem;
+    margin-right: 4rem;
+}
+.navbar .navbar-in{
+    padding: 1rem;
+    display: flex;
+}
+.navbar .navbar-item{
+    transition: background-color 0.3s;
+}
+.navbar .navbar-item a{
+    margin-right: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    display: inline-block;
+    color: black;
+}
+.navbar .navbar-in .search-bar{
+    margin-left: 6rem;
+    margin-top: 0.2rem;
+    display: flex;
+}
+.navbar .navbar-in .search-bar .search-icon img{
+    height: 1.5rem;  
+    padding: 0.4rem;
+}
+.navbar .navbar-in .search-bar .search-icon{
+    background-color: #f7f4f4;
+    height: 2.4rem; 
+    margin-right: 0.2rem;
+}
+.navbar .navbar-in .search-bar .inputsearch{
+    height: 2.3rem;
+    display: inline-block;
+    width: 23rem;
+    margin-bottom: 2rem;
+    margin-right: 8rem;
+    border: none;
+    background-color: #f7f4f4;
+}
+.navbar .navbar-in .icons img{
+    height: 1.5rem;
+    margin-top: 0.8rem;
+    margin-right: 0.8rem;
+}
+.item1 img{
+    height: 27rem;
+    width: 100%;
+    padding: 1rem;
+}
+.nextbody{
+    background-color: rgb(236, 237, 239);
+}
+.monsoonsale img{
+    padding: 1rem;
+    width: 100%;
+    height: 25rem;
+}
+.footer-section{
+    display: flex;
+}
+.footer .section1{
+    margin-left: 10rem;
+}
+.footer p{
+    font-size: 0.9rem;
+    color: #9c9b9b;
+    margin: 0.4rem;
+}
+.footer .section2{
+    margin-left: 5rem;
+    margin-right: 6rem;
+}
+.footer .section4{
+    margin-top: 4.5rem;
+    margin-left: 8rem;
+}
+.footer .section4 b{
+    color: black;
+}
+.footer .section4 p{
+    font-size: 1rem;
+}
+.footer .section5{
+    display: flex;
+    margin-right: 13.5rem;
+    align-items: center;
+}
+
+.footer .section5 h6{
+    margin-left: 10rem;
+    margin-right: 1rem; 
+}
+
+.footer .section5 hr{
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #939292; 
+}
+.footer .section5-part{
+    margin-left: 10rem;
+}
+.footer .section5-part p{
+    font-size: 1rem;
+}
+.footer .contact{
+    display: flex;
+}
+.footer .contact p{
+    margin-right: 13rem;
+}
+.footer .section5-part .contact a{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: blue;
+}
