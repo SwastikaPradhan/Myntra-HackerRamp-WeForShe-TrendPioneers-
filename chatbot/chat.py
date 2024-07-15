@@ -11,7 +11,7 @@
 
 
 # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-# file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/intents.json'
+# file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/intents.json'
 # def load_data(file_path):
 #     with open(file_path, 'r') as f:
 #         intents = json.load(f)
@@ -411,8 +411,8 @@
 #             print(f"Error opening URL: {e}")
 
 # if __name__ == "__main__":
-#     file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/intents.json'  # Update with your actual file path
-#     model_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/data.pth'  # Update with your actual model file path
+#     file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/intents.json'  # Update with your actual file path
+#     model_file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/data.pth'  # Update with your actual model file path
 
 #     intents = load_data(file_path)
 #     model, all_words, tags = load_model(model_file_path)
@@ -439,10 +439,8 @@ from model import NeuralNet
 from nltk_utils import tokenize, bag_of_words
 import re
 import csv
-import speech_recognition as sr
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
 bot_name = "Luno"
 
 def load_data(file_path):
@@ -500,7 +498,7 @@ def get_response(sentence, model, all_words, tags, intents, products):
                     response = compare_products_response(processed_sentence, products)
 
                 elif tag == "top_products":
-                    response = get_top_products()
+                    response = get_top_products(products)
 
                 elif tag == "support_details":
                     response = get_support_details()
@@ -591,27 +589,12 @@ def get_product_by_id(products, product_id):
             return product
     return None
 
-def get_top_products():
-    try:
-        url = "https://www.myntra.com/s/top-products"
-        response = requests.get(url)
-        soup = BeautifulSoup(response.content, 'html.parser')
-        products = soup.find_all('li', class_='product-base')
-
-        response = "Here are the top products:\n"
-
-        for idx, product in enumerate(products[:3], start=1):
-            product_name = product.find('h3', class_='product-title').text.strip()
-            product_price = product.find('span', class_='product-discountedPrice').text.strip()
-            product_rating = product.find('span', class_='product-rating').text.strip()
-
-            response += f"{idx}. {product_name} - Price: {product_price}, Rating: {product_rating}\n"
-
-        return response
-
-    except Exception as e:
-        print(f"Error fetching top products: {e}")
-        return "Sorry, I couldn't fetch the top products at the moment."
+def get_top_products(products):
+    top_products = sorted(products, key=lambda x: float(x['rating']), reverse=True)[:3]
+    response = "Here are the top products:\n"
+    for idx, product in enumerate(top_products, start=1):
+        response += f"{idx}. {product['name']} - Price: {product['price']}, Rating: {product['rating']}\n"
+    return response
 
 def get_support_details():
     support_details = {
@@ -644,35 +627,14 @@ def get_section_info(tag):
         except Exception as e:
             print(f"Error opening URL: {e}")
 
-def recognize_speech():
-    recognizer = sr.Recognizer()
-    mic = sr.Microphone()
-
-    with mic as source:
-        print("Listening...")
-        recognizer.adjust_for_ambient_noise(source)
-        audio = recognizer.listen(source)
-
-    try:
-        print("Recognizing...")
-        sentence = recognizer.recognize_google(audio)
-        print(f"You said: {sentence}")
-        return sentence
-    except sr.UnknownValueError:
-        print("Sorry, I did not understand that.")
-        return ""
-    except sr.RequestError:
-        print("Could not request results; check your network connection.")
-        return ""
-
 def main():
-    intents_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/intents.json'  # Update with your intents JSON file path
-    model_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/data.pth'  # Update with your model file path
-    products_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/products.csv'  # Update with your products CSV file path
+    intents_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/intents.json'
+    model_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/data.pth'
+    csv_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/products.csv'
 
     intents = load_data(intents_file_path)
     model, all_words, tags = load_model(model_file_path)
-    products = load_products_from_csv(products_file_path)
+    products = load_products_from_csv(csv_file_path)
 
     if model is None:
         print('Cannot load the model. Exiting...')
@@ -680,21 +642,12 @@ def main():
 
     print("Let's chat! Type 'quit' to exit.")
     while True:
-        print("Do you want to type or speak? (type/speak)")
-        input_mode = input("You: ").strip().lower()
-
-        if input_mode == 'quit':
-            break
-        elif input_mode == 'speak':
-            sentence = recognize_speech()
-        else:
-            sentence = input("You: ")
-
+        sentence = input("You: ")
         if sentence.lower() == 'quit':
             break
 
         response = get_response(sentence, model, all_words, tags, intents, products)
-        print(f"Luno: {response}")
+        print(f"{bot_name}: {response}")
 
 if __name__ == "__main__":
     main()
