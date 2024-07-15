@@ -11,7 +11,7 @@
 
 
 # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-# file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/intents.json'
+# file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/intents.json'
 # def load_data(file_path):
 #     with open(file_path, 'r') as f:
 #         intents = json.load(f)
@@ -411,8 +411,8 @@
 #             print(f"Error opening URL: {e}")
 
 # if __name__ == "__main__":
-#     file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/intents.json'  # Update with your actual file path
-#     model_file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/data.pth'  # Update with your actual model file path
+#     file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/intents.json'  # Update with your actual file path
+#     model_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/data.pth'  # Update with your actual model file path
 
 #     intents = load_data(file_path)
 #     model, all_words, tags = load_model(model_file_path)
@@ -666,9 +666,9 @@ def recognize_speech():
         return ""
 
 def main():
-    intents_file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/intents.json'  # Update with your intents JSON file path
-    model_file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/data.pth'  # Update with your model file path
-    products_file_path = 'C:/Users/manya/OneDrive/Desktop/myntraweforshe/products.csv'  # Update with your products CSV file path
+    intents_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/intents.json'  # Update with your intents JSON file path
+    model_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/data.pth'  # Update with your model file path
+    products_file_path = 'C:/Users/manya/OneDrive/Desktop/chatbot/products.csv'  # Update with your products CSV file path
 
     intents = load_data(intents_file_path)
     model, all_words, tags = load_model(model_file_path)
