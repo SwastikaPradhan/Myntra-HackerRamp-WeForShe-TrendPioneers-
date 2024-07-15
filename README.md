@@ -74,6 +74,7 @@ Our solution includes in-depth analysis and visualization of fashion trends, dyn
 <li>It will take us to different part of pages.</li>
 <li>There is a feature for verbal command.</li>
 <li>It can also compare between various products.</li>
+
 ![image](https://github.com/user-attachments/assets/07bd97e8-5e64-42e0-947b-ec9456c7c15e)
 
 
